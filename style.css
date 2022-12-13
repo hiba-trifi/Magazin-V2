@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap%27");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.637);
+  width: 100%;
+  padding: 5%;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+#container {
+  border-radius: 10px;
+  background-image: url(https://wallup.net/wp-content/uploads/2016/12/07/139500-model-makeup-face_paint-face-green_eyes-fashion-portrait.jpg);
+  background-size: cover;
+  margin: 4% 10%;
+  box-shadow: 3px 3px 3px #000000;
+  display: flex;
+  justify-content: space-around;
+}
+.banner {
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: center;
+}
+body {
+  background-color: #000000;
+  font-family: "poppins", sans-serif;
+}
+span {
+  color: #2e88e5;
+  font-weight: 400;
+  margin-top: 5%;
+}
+output {
+  margin-top: 2%;
+  color: red;
+}
+a {
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  display: none;
+  margin: 10% 5%;
+}
+
+#delet,
+#editbtn {
+  padding: 10%;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fa4c4b;
+}
+#editbtn {
+  background-color: #2e88e5;
+}
+.btnCell {
+  background-color: transparent;
+  border: none;
+}
+input[type="button"] {
+  background-color: #fa4c4b;
+  padding: 2%;
+  margin: 0% 40%;
+  border: none;
+  border-radius: 10px;
+}
+input[type="radio"] {
+  box-shadow: 0px 0px 0px #000000;
+  margin-left: 2%;
+  margin-right: 15%;
+}
+th {
+  /* border-radius: 5px; */
+  text-align: center;
+  background-color: whitesmoke;
+  border-right: 2px solid #d4dde0;
+  padding: 7px;
+}
+td {
+  width: 20%;
+  text-align: center;
+  /* border-radius: 5px; */
+  padding: 7px;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #d4dde0;
+  border-right: 2px solid #d4dde0;
+  background-color: #fa4c4b;
+}
+
+select {
+  border-radius: 10px;
+  margin: 4% 0%;
+  padding: 3%;
+  border: 1px solid #d4dde0;
+  background-color: transparent;
+  color: #fa4c4b;
+}
+
+input {
+  font-family: "poppins";
+  color: white;
+  box-shadow: 1px 1px 1px #d4dde0;
+  background-color: rgba(255, 255, 255, 0.199);
+  border: none;
+  border-radius: 10px;
+  padding: 2%;
+}
+#modalSuprimer , #modalconfirm {
+  border: solid 1px white;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: whitesmoke;
+  width: 30%;
+  margin-top: 10%;
+  position: fixed;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+h1 {
+  color: #fa4c4b;
+}
+
+#modalBtn {
+  margin-top: 5%;
+  display: flex;
+}
+
+#modalDelet , #modalOk {
+  background-color: #2e88e5;
+  padding: 5%;
+  margin-right: 5%;
+  border: none;
+  border-radius: 10px;
+}
+#modalCancel {
+  background-color: #d4dde0;
+  padding: 5%;
+  margin-left: 5%;
+  border: none;
+  border-radius: 10px;
+}
+#ajouter:hover{
+  background-color: #d4dde0;
+  color: #000000;
+  transition: 0.4s;
+}
