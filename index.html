@@ -281,17 +281,13 @@
           switching = false;
           var rows = table.rows
           for (var z = 1; z < (rows.length - 1); z++) {
-          var  shouldSwitch = false;
           var  x = rows[z].getElementsByTagName("TD")[0];
           var  y = rows[z + 1].getElementsByTagName("TD")[0];
-            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-              shouldSwitch = true;
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { 
+              rows[z].parentNode.insertBefore(rows[z + 1], rows[z]);
               break; }
           }
-          if (shouldSwitch) {
-            rows[z].parentNode.insertBefore(rows[z + 1], rows[z]);
-            switching = true;
-          }
+         
         }
         // edit btn ////
         var edit = document.createElement("input");
